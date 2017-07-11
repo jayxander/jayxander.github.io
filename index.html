@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+  <script>
+
+var user = prompt("Walking down the street, you encounter a ferocious kitten. \n\nWhat do you want to do? \n\n'KEEP' him? 'RUN' from him? Or 'CUDDLE' him?").toUpperCase();
+
+switch(user)
+{
+    case 'KEEP':
+        var scratched = prompt("Great choice! He'll make a great addition to your cat pack! \n Are you afraid of getting scratched? (YES or NO)").toUpperCase();
+        if(scratched == "YES")
+        {
+            confirm("You have some cojanes on you. Go snuggle!");
+        }
+        else if (scratched == "NO")
+        {
+            confirm("Well you're not gonna be able to have a snug sesh if you're a baby");
+        }
+        else
+        {
+            confirm("I have no idea what you're trying to say");
+        }
+       break;
+
+    case 'RUN':
+        var run = prompt("Very wise... A kitten is a vile and dangerous beast. \n Are you faster than a feline? (YES or NO)").toUpperCase();
+        if(run == "YES")
+        {
+            confirm("Noice! You live to see another day!");
+        }
+        else if (run == "NO")
+        {
+            confirm("You were just scratched 3 times, and then got some licks...");
+        }
+        else
+        {
+            confirm("I have no idea what you're trying to say");
+        }
+        break;
+
+    case 'CUDDLE':
+        var cuddle = prompt("YES! Squishy squish squish. But first, are you ready for a gorgeous kneading machine on top of you? (YES or NO)").toUpperCase();
+        if(cuddle == "YES")
+        {
+            confirm("Noice! Squish that shit!");
+        }
+        else if (cuddle == "NO")
+        {
+            confirm("You pissed kitten off. You were just scratched 3 times, and then got some licks...");
+        }
+        else
+        {
+            confirm("I have no idea what you're trying to say");
+        }
+        break;
+
+    default:
+        confirm("I have no idea what you're trying to say");
+    break;
+}
+
+  </script>
+</body>
+</html>
